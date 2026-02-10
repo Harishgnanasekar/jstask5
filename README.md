@@ -26,7 +26,7 @@ console.log(finalEmployee);
 }
 
 
- TASK 2 – Shopping Cart (Spread + Array)
+# TASK 2 – Shopping Cart (Spread + Array)
 
 ```js
 let cart1 = ["Shoes", "Shirt"];
@@ -45,7 +45,7 @@ console.log(finalCart);
 
 ---
 
-  TASK 3 – Rest Operator Salary Calculator
+ # TASK 3 – Rest Operator Salary Calculator
 
 ```js
 function calculateTotalSalary(baseSalary, ...bonuses) {
@@ -65,7 +65,7 @@ Total Salary: 40000
 
 ---
 
-  TASK 4 – Advanced Destructuring
+ # TASK 4 – Advanced Destructuring
 
 ```js
 let student = {
@@ -87,7 +87,7 @@ Rahul scored 90 in maths and 85 in science
 
 ---
 
-  TASK 5 – Array Manipulation
+# TASK 5 – Array Manipulation
 
 ```js
 let numbers = [10, 20, 30, 40, 50];
@@ -114,7 +114,7 @@ Final Array: [50, 40, 25, 20, 10]
 
 ---
 
- TASK 6 – Flatten Data
+# TASK 6 – Flatten Data
 
 ```js
 let apiData = [1, 2, [3, 4, [5, 6, [7, 8]]]];
@@ -134,7 +134,7 @@ Index of 6: 5
 
 ---
 
-  TASK 7 – Sorting Problem (Compare Function)
+#  TASK 7 – Sorting Problem (Compare Function)
 
 ```js
 let prices = [100, 5, 25, 300, 45];
