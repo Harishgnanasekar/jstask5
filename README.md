@@ -12,8 +12,6 @@ let finalEmployee = {
 };
 
 console.log(finalEmployee);
-
-
 **Output:**
 
 ```js
@@ -25,8 +23,7 @@ console.log(finalEmployee);
   experience: "2 years"
 }
 
-
-# TASK 2 – Shopping Cart (Spread + Array)
+#  TASK 2 – Shopping Cart (Spread + Array) #
 
 ```js
 let cart1 = ["Shoes", "Shirt"];
@@ -179,7 +176,7 @@ console.log(updatedUsers);
 
 **Output:**
 
-```js
+
 [
   { name: "B", salary: 45000 },
   { name: "C", salary: 35000 },
