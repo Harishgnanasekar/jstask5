@@ -1,5 +1,8 @@
-# TASK 1 – Employee Merge System (Spread Operator)
----js
+## TASK 1 – Employee Merge System (Spread Operator)
+
+**Code:**
+
+```js
 let empBasic = { name: "Naveen", role: "Trainee", salary: 20000 };
 let empPromotion = { role: "Developer", bonus: 10000 };
 
@@ -11,11 +14,11 @@ let finalEmployee = {
 };
 
 console.log(finalEmployee);
+```
 
-**output:**
+**Final Output:**
 
----js
-
+```js
 {
   name: "Naveen",
   role: "Developer",
@@ -23,9 +26,13 @@ console.log(finalEmployee);
   bonus: 10000,
   experience: "2 years"
 }
+```
 
+---
 
-#  TASK 2 – Shopping Cart (Spread + Array) #
+## TASK 2 – Shopping Cart (Spread + Array)
+
+**Code:**
 
 ```js
 let cart1 = ["Shoes", "Shirt"];
@@ -36,7 +43,7 @@ let finalCart = ["Socks", ...cart1, ...cart2, "Bag"];
 console.log(finalCart);
 ```
 
-**Output:**
+**Final Output:**
 
 ```js
 ["Socks", "Shoes", "Shirt", "Watch", "Cap", "Bag"]
@@ -44,41 +51,54 @@ console.log(finalCart);
 
 ---
 
- # TASK 3 – Rest Operator Salary Calculator
+## TASK 3 – Rest Operator Salary Calculator
+
+**Code:**
 
 ```js
 function calculateTotalSalary(baseSalary, ...bonuses) {
-  let bonusTotal = bonuses.reduce((sum, b) => sum + b, 0);
-  return baseSalary + bonusTotal;
+  let bonusSum = 0;
+
+  for (let bonus of bonuses) {
+    bonusSum += bonus;
+  }
+
+  return baseSalary + bonusSum;
 }
 
-let total = calculateTotalSalary(30000, 2000, 3000, 5000);
-console.log("Total Salary:", total);
+let totalSalary = calculateTotalSalary(30000, 2000, 3000, 5000);
+console.log("Total Salary:", totalSalary);
 ```
 
-**Output:**
+**Final Output:**
 
-```js
+```text
 Total Salary: 40000
 ```
 
 ---
 
- # TASK 4 – Advanced Destructuring
+## TASK 4 – Advanced Destructuring
+
+**Code:**
 
 ```js
 let student = {
   name: "Rahul",
-  marks: { maths: 90, science: 85, english: 88 }
+  marks: {
+    maths: 90,
+    science: 85,
+    english: 88
+  }
 };
 
 let { name } = student;
 let { maths, science } = student.marks;
 
-console.log(`${name} scored ${maths} in maths and ${science} in science`);
+console.log(name + " scored " + maths + " in maths and " + science + " in science");
 ```
 
-**Output:**
+**Final Output:**
 
 ```text
 Rahul scored 90 in maths and 85 in science
@@ -86,25 +106,27 @@ Rahul scored 90 in maths and 85 in science
 
 ---
 
-# TASK 5 – Array Manipulation
+## TASK 5 – Array Manipulation
+
+**Code:**
 
 ```js
 let numbers = [10, 20, 30, 40, 50];
 
-// remove 30 and add 25
+// Remove 30 and add 25
 numbers.splice(2, 1, 25);
 
-// reverse array
+// Reverse the array
 numbers.reverse();
 
-// check if 50 exists
-let exists = numbers.includes(50);
+// Check if 50 exists
+let result = numbers.includes(50);
 
 console.log("Final Array:", numbers);
-console.log("50 exists:", exists);
+console.log("50 exists:", result);
 ```
 
-**Output:**
+**Final Output:**
 
 ```js
 Final Array: [50, 40, 25, 20, 10]
@@ -113,7 +135,9 @@ Final Array: [50, 40, 25, 20, 10]
 
 ---
 
-# TASK 6 – Flatten Data
+## TASK 6 – Flatten Data
+
+**Code:**
 
 ```js
 let apiData = [1, 2, [3, 4, [5, 6, [7, 8]]]];
@@ -124,31 +148,33 @@ console.log(flatArray);
 console.log("Index of 6:", flatArray.indexOf(6));
 ```
 
-**Output:**
+**Final Output:**
 
 ```js
-[1,2,3,4,5,6,7,8]
+[1, 2, 3, 4, 5, 6, 7, 8]
 Index of 6: 5
 ```
 
 ---
 
-#  TASK 7 – Sorting Problem (Compare Function)
+## TASK 7 – Sorting Problem
+
+**Code:**
 
 ```js
 let prices = [100, 5, 25, 300, 45];
 
-// Ascending
-let asc = [...prices].sort((a, b) => a - b);
+// Ascending order
+let ascendingOrder = prices.slice().sort((a, b) => a - b);
 
-// Descending
-let desc = [...prices].sort((a, b) => b - a);
+// Descending order
+let descendingOrder = prices.slice().sort((a, b) => b - a);
 
-console.log("Ascending:", asc);
-console.log("Descending:", desc);
+console.log("Ascending:", ascendingOrder);
+console.log("Descending:", descendingOrder);
 ```
 
-**Output:**
+**Final Output:**
 
 ```js
 Ascending: [5, 25, 45, 100, 300]
@@ -157,7 +183,9 @@ Descending: [300, 100, 45, 25, 5]
 
 ---
 
-##  BONUS HARD TASK – Team Level
+## BONUS HARD TASK – Team Level
+
+**Code:**
 
 ```js
 let users = [
@@ -166,6 +194,7 @@ let users = [
   { name: "C", salary: 30000 }
 ];
 
+// Increase salary and sort high to low
 let updatedUsers = users
   .map(user => ({
     ...user,
@@ -176,14 +205,18 @@ let updatedUsers = users
 console.log(updatedUsers);
 ```
 
-**Output:**
+**Final Output:**
 
-
+```js
 [
   { name: "B", salary: 45000 },
   { name: "C", salary: 35000 },
   { name: "A", salary: 25000 }
 ]
+```
+
+---
+
 
 
 
