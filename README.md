@@ -1,4 +1,4 @@
- TASK 1 – Employee Merge System (Spread Operator)
+# TASK 1 – Employee Merge System (Spread Operator)
  
 let empBasic = { name: "Naveen", role: "Trainee", salary: 20000 };
 let empPromotion = { role: "Developer", bonus: 10000 };
