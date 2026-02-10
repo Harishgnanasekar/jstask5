@@ -1,4 +1,5 @@
 # TASK 1 – Employee Merge System (Spread Operator)
+---js
  
 let empBasic = { name: "Naveen", role: "Trainee", salary: 20000 };
 let empPromotion = { role: "Developer", bonus: 10000 };
@@ -13,6 +14,8 @@ let finalEmployee = {
 console.log(finalEmployee);
 
 **Output:**
+
+---js
 
 {
   name: "Naveen",
